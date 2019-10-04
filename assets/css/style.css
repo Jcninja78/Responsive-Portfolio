@@ -18,6 +18,12 @@ body {
    margin: 0 auto;
    clear: both;
  }
+
+ .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
  
  h1,
  h2,
@@ -139,7 +145,7 @@ body {
  .work {
    position: relative;
    float: left;
-   width: 274px;
+   width: 400px;
    margin: 20px 0 25px;
    overflow: auto;
  }
@@ -241,4 +247,10 @@ body {
         margin-bottom: 20px;
     }
 
+    #masthead {
+       position: absolute;
+      }
+    }
+
+    
  
